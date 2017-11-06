@@ -12,14 +12,14 @@ $path_parts = pathinfo($phpSelf);
 <html lang="en">
     <head>
 <!-- you can add php code here (similar to nav.php) to print a different title on each page -->
-        <title>Lab 10</title>
+        <title>CBBR Inc.</title>
         <meta charset="utf-8">
-        <meta name="author" content="Brody Childs">
-        <meta name="description" content="Lab 10, Working with MORE MORE forums" >
+        <meta name="author" content="Brody Childs and Treuvor Holowinsky">
+        <meta name="description" content="Clean Buring Black Rocks Inc. official website. Home of the revolutionary Clean Burning Black Rock or 'CBBR'." >
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Link to your custom style below -->
-        <link rel="stylesheet" type="text/css" href="../css/custom2.css">
+        <link rel="stylesheet" type="text/css" href="css/mainStyle.css">
 
     </head>
 
