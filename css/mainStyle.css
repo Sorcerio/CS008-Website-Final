@@ -44,7 +44,7 @@ body {
 	padding-bottom: 5px;
 	height: 38px;
 	text-align: center;
-	display: fixed;
+	/* position: fixed;  */
 }
 
 .toolBar li {
@@ -63,6 +63,19 @@ body {
 	background-color: var(--backgroundPanels2);
 	color: var(--backgroundPanels);
 	cursor: pointer;
+}
+
+/* Header */
+#headerTitle {
+	font-size: 5em;
+	text-shadow: 4px 4px 8px black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+#headerImage {
+	height: 1%;
 }
 
 /* ... */

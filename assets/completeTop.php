@@ -1,5 +1,5 @@
 <?php
     include ("top.php");
-    include ("header.php");
     include ("nav.php");
+    include ("header.php");
 ?>

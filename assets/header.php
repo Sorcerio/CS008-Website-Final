@@ -1,5 +1,5 @@
 <!-- ######################     Page header   ############################## -->
 <header>
-    <!-- <h1 class="headerH1">Clean Burning Black Rocks Inc.</h1> -->
-    <!-- <img src="../images/lab8Logo.jpg" alt="Save Nature Because It's Great Inc. Logo">  Logo from https://nightout.com/events/earth-day-wellness-celebration/tickets  -->
+     <h1 id="headerTitle">Clean Burning Black Rocks Inc.</h1> 
+     <img src="images/cbbr.png" alt="A Clean Burning Black Rock TM" width="50%" id="headerImage">
 </header>

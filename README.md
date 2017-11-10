@@ -6,3 +6,4 @@ It's a school project for a fictional company's website called Clean Burning Bla
 
 ## Credits
 * Pine Tree Background - [Found Here](http://68.media.tumblr.com/df15037a09ea7ab950ee18e100d2247e/tumblr_or8o0sVRoJ1s0jbtpo1_1280.jpg)
+* "Clean Burning Black Rock" - [Found Here](https://mineralseducationcoalition.org/wp-content/uploads/Coal2_bituminous_353621321.jpg)
