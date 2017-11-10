@@ -1,12 +1,52 @@
+/* Colors */
+/*
+Background Panels: #e9e7dd
+Background Panel Outline: #a7a69e
+*/
+
 /* Universals */
 * {
 	font-family: Calibri;
 }
 
 body {
-	background-color: rgb(242, 242, 242);
+	/* background-color: rgb(242, 242, 242); */
+	background-image: url("../images/treesBackground.jpg");
+	background-size: 100%;
+}
+
+.backgroundPanel {
+	background-color: #e9e7dd;
+	border-radius: 10px;
+	border: 5px ridge #a7a69e;
+	margin-left: 3%;
+	margin-right: 3%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 
 /* Toolbar */
+.toolBar {
+	list-style-type: none;
+    margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
 
+.toolBar li {
+	display: inline;
+}
+
+.toolBar li a {
+	background-color: #e9e7dd;
+	padding: 10px;
+	width: 16.66%;
+}
+
+.toolBar li a:hover {
+	background-color: #a7a69e;
+	cursor: pointer;
+}
 /* ... */

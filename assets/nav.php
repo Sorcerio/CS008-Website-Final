@@ -1,6 +1,10 @@
 <!-- ######################     Main Navigation   ########################## -->
 <nav>
-    <ol>
+    <ul class="toolBar">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+    </ul>
+    <!-- <ol>
         <?php
         print '<li class="';
         if ($path_parts['filename'] == "index") {
@@ -50,5 +54,5 @@
         print '<a href="form.php">Join</a>';
         print '</li>';
         ?>
-    </ol>
+    </ol> -->
 </nav>
