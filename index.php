@@ -3,17 +3,20 @@
     include ("assets/completeTop.php");
 ?>
 
-<!-- Background Panel Start -->
-<div class="backgroundPanel">
-
 <!-- Page Content -->
-<h1>Test Header</h1>
-<p>Test text for getting stuff to work right before putting in effort.</p>
+<div class="flexBoxContainer">
+    <div class="backgroundPanel">
+        <h1 class="bpHeader">About Us</h1>
+        <p>Some text from the About Us page.</p>
+    </div>
+    
+    <div class="backgroundPanel">
+        <h1 class="bpHeader">Join Us</h1>
+        <p>Some text describing our form and what we use it for, etc.</p>
+    </div>
+</div>
 
 <!-- Footer Loader -->
 <?php 
     include ("assets/footer.php"); 
 ?>
-
-<!-- Background Panel End -->
-</div>
