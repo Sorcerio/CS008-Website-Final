@@ -3,6 +3,10 @@
     <ul class="toolBar">
         <li><a href="">Home</a></li>
         <li><a href="">About</a></li>
+        <li><a href="">Forum</a></li>
+        <li><a href="">PAGE</a></li>
+        <li><a href="">PAGE</a></li>
+        <li><a href="">PAGE</a></li>
     </ul>
     <!-- <ol>
         <?php

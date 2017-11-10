@@ -3,22 +3,29 @@
 Background Panels: #e9e7dd
 Background Panel Outline: #a7a69e
 */
+:root {
+	--backgroundPanels: black;
+	--backgroundPanels2: white;
+	--textColor: white;
+}
 
 /* Universals */
 * {
 	font-family: Calibri;
+	color: var(--textColor);
 }
 
 body {
-	/* background-color: rgb(242, 242, 242); */
+	/* background-color: rgb(242, 242, 242);  */
 	background-image: url("../images/treesBackground.jpg");
 	background-size: 100%;
+	margin: 0px; 
 }
 
 .backgroundPanel {
-	background-color: #e9e7dd;
+	background-color: var(--backgroundPanels);
 	border-radius: 10px;
-	border: 5px ridge #a7a69e;
+	border: 5px ridge var(--backgroundPanels2);
 	margin-left: 3%;
 	margin-right: 3%;
 	padding-left: 10px;
@@ -33,20 +40,29 @@ body {
     margin: 0;
 	padding: 0;
 	margin-bottom: 30px;
+	background-color: var(--backgroundPanels);
+	padding-bottom: 5px;
+	height: 38px;
+	text-align: center;
+	display: fixed;
 }
 
 .toolBar li {
-	display: inline;
+	float: left;
+	width: 15.3%;
+	background-color: var(--backgroundPanels);
+	padding: 10px;
 }
 
 .toolBar li a {
-	background-color: #e9e7dd;
-	padding: 10px;
-	width: 16.66%;
+	color: var(--textColor);
+	text-decoration: none;
 }
 
-.toolBar li a:hover {
-	background-color: #a7a69e;
+.toolBar li:hover {
+	background-color: var(--backgroundPanels2);
+	color: var(--backgroundPanels);
 	cursor: pointer;
 }
+
 /* ... */
