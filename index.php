@@ -4,17 +4,37 @@
 ?>
 
 <!-- Page Content -->
-<div class="flexBoxContainer">
+<content class="flexBoxContainer">
     <div class="backgroundPanel">
         <h1 class="bpHeader">About Us</h1>
-        <p>Some text from the About Us page.</p>
+        <p>Some text from the About Us page. Need ~85 words.</p>
+        <a href="#" class="bpButton">More Information</a>
     </div>
     
     <div class="backgroundPanel">
         <h1 class="bpHeader">Join Us</h1>
-        <p>Some text describing our form and what we use it for, etc.</p>
+        <p>Some text describing our form and what we use it for, etc. Need ~85 words.</p>
+        <a href="#" class="bpButton">More Information</a>
     </div>
-</div>
+
+    <div class="backgroundPanel">
+        <h1 class="bpHeader">Our Investors</h1>
+        <p>Some text from the Investors page. Need ~85 words.</p>
+        <a href="#" class="bpButton">More Information</a>
+    </div>
+
+    <div class="backgroundPanel">
+        <h1 class="bpHeader">PAGE_#5</h1>
+        <p>Some text from the ??? page. Need ~85 words.</p>
+        <a href="#" class="bpButton">More Information</a>
+    </div>
+
+    <div class="backgroundPanel">
+        <h1 class="bpHeader">PAGE_#6</h1>
+        <p>Some text from the ??? page. Need ~85 words.</p>
+        <a href="#" class="bpButton">More Information</a>
+    </div>
+</content>
 
 <!-- Footer Loader -->
 <?php 
