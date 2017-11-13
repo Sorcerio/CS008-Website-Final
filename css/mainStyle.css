@@ -3,6 +3,7 @@
 	--backgroundPanels: black;
 	--backgroundPanels2: white;
 	--textColor: white;
+	--selectorColor: #A71818;
 }
 
 /* Universals */
@@ -123,6 +124,10 @@ header {
 .toolBar li a:hover {
 	background-color: var(--backgroundPanels2);
 	color: var(--backgroundPanels);
+}
+
+.toolBar .selected {
+	background-color: var(--selectorColor);
 }
 
 /* Header */
