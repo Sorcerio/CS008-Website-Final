@@ -1,62 +1,11 @@
 <!-- ######################     Main Navigation   ########################## -->
 <nav>
     <ul class="toolBar">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Data</a></li>
-        <li><a href="">Join</a></li>
-        <li><a href="">Investors</a></li>
-        <li><a href="">Invest</a></li>
+        <li><a href="index.php" <?php if($path_parts['filename'] == "index"){ print 'class="selected"'; } ?>>Home</a></li>
+        <li><a href="about.php" <?php if($path_parts['filename'] == "about"){ print 'class="selected"'; } ?>>About</a></li>
+        <li><a href="data.php" <?php if($path_parts['filename'] == "data"){ print 'class="selected"'; } ?>>Data</a></li>
+        <li><a href="join.php" <?php if($path_parts['filename'] == "join"){ print 'class="selected"'; } ?>>Join</a></li>
+        <li><a href="investors.php" <?php if($path_parts['filename'] == "investors"){ print 'class="selected"'; } ?>>Investors</a></li>
+        <li><a href="invest.php" <?php if($path_parts['filename'] == "invest"){ print 'class="selected"'; } ?>>Invest</a></li>
     </ul>
-    <!-- <ol>
-        <?php
-        print '<li class="';
-        if ($path_parts['filename'] == "index") {
-            print ' activePage ';
-        }
-        print '">';
-        print '<a href="index.php">Home</a>';
-        print '</li>';
-
-        print '<li class="';
-        if ($path_parts['filename'] == "news") {
-            print ' activePage ';
-        }
-        print '">';
-        print '<a href="news.php">News</a>';
-        print '</li>';
-        
-        print '<li class="';
-        if ($path_parts['filename'] == "contest") {
-            print ' activePage ';
-        }
-        print '">';
-        print '<a href="contest.php">Contest</a>';
-        print '</li>';
-        
-        print '<li class="';
-        if ($path_parts['filename'] == "art") {
-            print ' activePage ';
-        }
-        print '">';
-        print '<a href="art.php">Art</a>';
-        print '</li>';
-        
-        print '<li class="';
-        if ($path_parts['filename'] == "weather") {
-            print ' activePage ';
-        }
-        print '">';
-        print '<a href="weather.php">Weather</a>';
-        print '</li>';
-
-        print '<li class="';
-        if ($path_parts['filename'] == "form") {
-            print ' activePage ';
-        }
-        print '">';
-        print '<a href="form.php">Join</a>';
-        print '</li>';
-        ?>
-    </ol> -->
 </nav>
