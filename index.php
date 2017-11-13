@@ -24,14 +24,14 @@
     </div>
 
     <div class="backgroundPanel">
-        <h1 class="bpHeader">PAGE_#5</h1>
-        <p>Some text from the ??? page. Need ~85 words.</p>
+        <h1 class="bpHeader">Data</h1>
+        <p>Some text from the Data page. Need ~85 words.</p>
         <a href="#" class="bpButton">More Information</a>
     </div>
 
     <div class="backgroundPanel">
-        <h1 class="bpHeader">PAGE_#6</h1>
-        <p>Some text from the ??? page. Need ~85 words.</p>
+        <h1 class="bpHeader">Invest</h1>
+        <p>Some text from the Invest page. Need ~85 words.</p>
         <a href="#" class="bpButton">More Information</a>
     </div>
 </content>

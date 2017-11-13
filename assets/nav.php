@@ -3,10 +3,10 @@
     <ul class="toolBar">
         <li><a href="">Home</a></li>
         <li><a href="">About</a></li>
+        <li><a href="">Data</a></li>
         <li><a href="">Join</a></li>
         <li><a href="">Investors</a></li>
-        <li><a href="">PAGE</a></li>
-        <li><a href="">PAGE</a></li>
+        <li><a href="">Invest</a></li>
     </ul>
     <!-- <ol>
         <?php
