@@ -7,15 +7,19 @@
 
 /* Universals */
 * {
-	font-family: Calibri;
+	font-family: Calibri; 
 	color: var(--textColor);
 }
 
 body {
-	/* background-color: rgb(242, 242, 242);  */
+	/* background-color: rgb(242, 242, 242);   */
 	background-image: url("../images/treesBackground.jpg");
-	background-size: 100%;
+	background-size: 100%; 
 	margin: 0px; 
+}
+
+header {
+	margin-top: 3%;
 }
 
 .backgroundPanel {
@@ -94,30 +98,31 @@ body {
 	list-style-type: none;
     margin: 0;
 	padding: 0;
-	margin-bottom: 30px;
 	background-color: var(--backgroundPanels);
-	padding-bottom: 5px;
-	height: 38px;
-	text-align: center;
-	/* position: fixed;  */
+	height: fit-content;
+	padding: 14px 16px;
+	position: fixed;
+    top: 0;
+	width: 100%;
 }
 
 .toolBar li {
-	float: left;
-	width: 15.3%;
-	background-color: var(--backgroundPanels);
-	padding: 10px;
+	display: inline;
 }
 
 .toolBar li a {
-	color: var(--textColor);
+	width: 1em;
 	text-decoration: none;
+	text-align: center;
+	background-color: var(--backgroundPanels);
+	color: var(--backgroundPanels2);
+	padding: 14px 16px;
+	font-size: 20px;
 }
 
-.toolBar li:hover {
+.toolBar li a:hover {
 	background-color: var(--backgroundPanels2);
 	color: var(--backgroundPanels);
-	cursor: pointer;
 }
 
 /* Header */
