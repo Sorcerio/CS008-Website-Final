@@ -4,6 +4,7 @@
 	--backgroundPanels2: white;
 	--textColor: white;
 	--selectorColor: #A71818;
+	--greenColor: #009900;
 }
 
 /* Fonts */
@@ -85,6 +86,7 @@ header {
    align-items: center;
    -webkit-justify-content: center;
    justify-content: center;
+   align-items: flex-start;
 }
 
 .flexBoxContainer div {
@@ -198,4 +200,33 @@ header {
 
 .contentList li h3 a:hover {
 	text-decoration-style: solid;
+}
+
+.investorStock {
+	text-align: center;
+}
+
+.investorStock .greenText {
+	color: var(--greenColor);
+}
+
+/* News Page */
+#newsPage div {
+	padding: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+
+#newsPage div h1, h4{
+	margin: 0px;
+}
+
+#newsPage div p {
+	margin: 0px;
+}
+
+#newsPage div a {
+	text-align: center;
+	margin: auto;
 }

@@ -3,15 +3,21 @@
     include ("assets/completeTop.php");
 ?>
 
-<!-- Background Panel Start -->
-<div class="backgroundPanel">
-
 <!-- Page Content -->
-<h3>News Page</h3>
-<p>Test text for getting stuff to work right before putting in effort.</p>
+<content id="newsPage">
+    <!-- Top Bar -->
+    <div class="backgroundPanel">
+        <h1>TITLE_OF_ARTICLE</h1>
+        <h4>Source: LINK_OF_ARTICLE</h4>
+    </div>
 
-<!-- Background Panel End -->
-</div>
+    <!-- Middle Block -->
+    <div class="backgroundPanel">
+        <p>CONTENT_OF_ARTICLE</p>
+        <br>
+        <a href="LINK_OF_ARTICLE">Read More Here</a>
+    </div>
+</content>
 
 <!-- Footer Loader -->
 <?php 
