@@ -7,7 +7,7 @@
 <div class="backgroundPanel">
 
 <!-- Page Content -->
-<h3>Data Page</h3>
+<h3>News Page</h3>
 <p>Test text for getting stuff to work right before putting in effort.</p>
 
 <!-- Background Panel End -->

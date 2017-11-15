@@ -92,8 +92,15 @@ header {
     /* background-color: var(--backgroundPanels); */
 	margin: 10px;
 	border-radius: 10px;
+}
+
+.homePageFlexBox {
 	width: 40%;
 	height: 200px;
+}
+
+.investorsFlexBox {
+	width: 40%;
 }
 
 /* Toolbar */
@@ -173,6 +180,7 @@ header {
 	border-radius: 10px;
 	padding-top: 4px;
 	padding-bottom: 4px;
+	margin-bottom: 4px;
 }
 
 .contentList li * {
