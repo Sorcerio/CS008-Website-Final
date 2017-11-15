@@ -10,8 +10,14 @@
 <h3>About Page</h3>
 <p>Test text for getting stuff to work right before putting in effort.</p>
 
+<content class="flexBoxContainer">
+    <div class="backgroundPanel">
+        <p>Testing with flexbox shit, making sure I didn't break everyhting horribly</p>
+    
+
 <!-- Background Panel End -->
-</div>
+    </div>
+</content>
 
 <!-- Footer Loader -->
 <?php 
