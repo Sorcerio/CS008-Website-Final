@@ -7,16 +7,12 @@
 <div class="backgroundPanel">
 
 <!-- Page Content -->
-<h3>About Page</h3>
+<h1>About Page</h1>
 <p>Test text for getting stuff to work right before putting in effort.</p>
-
-        <p>Testing with flexbox shit, making sure I didn't break everything horribly. Seems like it went fairly well.</p>
-
-        <a href
-    
 
 <!-- Background Panel End -->
 </div>
+<br>
 
 <!-- Footer Loader -->
 <?php 
