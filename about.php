@@ -8,7 +8,7 @@
 
 <!-- Page Content -->
 <h1>About Page</h1>
-<p>Test text for getting stuff to work right before putting in effort.</p>
+<p>Test text for getting stuff to <img src="images/cbbrHands.jpg" align="middle"> work right before putting in effort.</p>
 
 <!-- Background Panel End -->
 </div>

@@ -12,6 +12,11 @@
 	src: url("../fonts/Dense.otf") format("opentype");
 }
 
+@font-face {
+	font-family: "Alcubierre";
+	src: url("../fonts/Alcubierre.otf") format("opentype");
+}
+
 /* Universals */
 * {
 	font-family: Calibri; 
@@ -134,7 +139,7 @@ header {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	text-align: center;
-	font-family: "Dense", Calibri;
+	font-family: "Alcubierre", Calibri;
 }
 
 #headerImage {
@@ -154,4 +159,35 @@ header {
 	text-align: center;
 }
 
-/* Page Content */
+/* Investors Page */
+.contentList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+}
+
+.contentList li {
+	background-color: var(--backgroundPanels2);
+	color: var(--backgroundPanels);
+	border-radius: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.contentList li * {
+	text-align: left;
+	margin: 2px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: var(--backgroundPanels);
+}
+
+.contentList li h3 a {
+	margin: 0px;
+	text-decoration-style: dotted;
+}
+
+.contentList li h3 a:hover {
+	text-decoration-style: solid;
+}
