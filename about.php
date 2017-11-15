@@ -10,13 +10,12 @@
 <h3>About Page</h3>
 <p>Test text for getting stuff to work right before putting in effort.</p>
 
-<content class="flexBoxContainer">
-    <div class="backgroundPanel">
-        <p>Testing with flexbox shit, making sure I didn't break everyhting horribly</p>
+        <p>Testing with flexbox shit, making sure I didn't break everything horribly. Seems like it went fairly well.
+        Do we want a full page flex box or should I change this?</p>
     
 
 <!-- Background Panel End -->
-    </div>
+</div>
 </content>
 
 <!-- Footer Loader -->
