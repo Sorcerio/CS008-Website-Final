@@ -230,3 +230,8 @@ header {
 	text-align: center;
 	margin: auto;
 }
+
+.newsGoBack {
+	text-align: center;
+	font-weight: normal;
+}

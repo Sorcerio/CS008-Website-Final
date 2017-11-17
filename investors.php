@@ -71,11 +71,19 @@
             <h1 class="bpHeader">News</h1>
             <ol class="contentList">
                 <?php
+                    // Prepare the counter
+                    $index = 0;
+
+                    // Print all the data
                     foreach($data as $row) {
+                        // Print Data
                         print '<li>';
-                        print '<h3><a href="#">'.$row[0].'</a></h3>'; // STILL NEED TO DO THE LINK!
+                        print '<h3><a href="news.php?article='.$index.'">'.$row[0].'</a></h3>'; // STILL NEED TO DO THE LINK!
                         print '<p>'. str_replace("/COMMA/",",",substr($row[1],0,300)).'...</p>';
                         print '</li>';
+
+                        // Iterate
+                        $index += 1;
                     }
                 ?>
 
