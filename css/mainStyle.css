@@ -235,3 +235,90 @@ header {
 	text-align: center;
 	font-weight: normal;
 }
+
+/* Forum */
+#frmRegister {
+	/* max-width: 50%; */
+	margin: auto;
+}
+
+#frmRegister fieldset{
+    max-width: 50%;
+    border: 3px solid var(--backgroundPanels2);
+    border-radius: 4px;
+    margin-bottom: 3px;
+}
+
+#frmRegister fieldset legend {
+    font-weight: bold;
+	color: var(--backgroundPanels);
+	background-color: var(--backgroundPanels2);
+    font-size: 1.3em;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-radius: 4px;
+    padding-left: 5px;
+	padding-right: 5px;
+}
+
+#frmRegister fieldset * .realLabel {
+    margin-right: 3px;
+	font-weight: bold;
+	color: white;
+}
+
+#frmRegister fieldset * .standardInput {
+    border-radius: 4px;
+    padding: 3px;
+    outline: none;
+    width: 50%;
+	border: 1px solid black;
+	color: black;
+}
+
+#frmRegister .buttons .button {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    outline: none;
+}
+
+#frmRegister .buttons .button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.frmMistake {
+    color: black;
+    background-color: red;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+#frmErrors ol li { 
+    color: red;
+}
+
+.information p select {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+	padding: 2px;
+	color: black;
+}
+
+.dropDownText {
+	color: black;
+}
+
+.checkField {
+    font-weight: normal;
+}
+
+.checkField input {
+    width: 10px;
+}

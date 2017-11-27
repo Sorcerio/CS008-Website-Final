@@ -48,7 +48,7 @@ $path_parts = pathinfo($phpSelf);
             print '</pre></p>';
             
         }
-    /*
+
         // Inclulde all Libraries
         print PHP_EOL.'<!-- include libraries -->'.PHP_EOL;
 
@@ -61,6 +61,5 @@ $path_parts = pathinfo($phpSelf);
         }
 
         print PHP_EOL.'<!-- finished including libraries -->'.PHP_EOL;
-    */
     ?>
 <!-- ######################     Start of Body   ############################ -->
