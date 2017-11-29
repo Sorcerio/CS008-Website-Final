@@ -4,7 +4,7 @@
 ?>
 
 <!-- Background Panel Start -->
-<div class="backgroundPanel">
+<div class="backgroundPanel backgroundPanelSmall">
 
 <!-- Page Content -->
 <?php
@@ -195,7 +195,7 @@
             <legend>Contact Information</legend>
             <p>
                 <label class="required text-field realLabel" for="txtFirstName">First Name:</label>
-                <input autofocus
+                <input
                     <?php if ($firstNameERROR) print 'class="mistake"'; ?>
                     id="txtFirstName"
                     class="standardInput"
@@ -210,7 +210,7 @@
 
             <p>
                 <label class="required text-field realLabel" for="txtLastName">Last Name:</label>
-                <input autofocus
+                <input
                     <?php if ($lastNameERROR) print 'class="mistake"'; ?>
                     id="txtLastName"
                     class="standardInput"
@@ -259,7 +259,7 @@
 
             <p>
                 <label class="required text-field realLabel" for="txtDonationAmount">Investment Amount:</label>
-                <input autofocus
+                <input
                     <?php if ($donationAmountERROR) print 'class="mistake"'; ?>
                     id="txtDonationAmount"
                     class="standardInput"
@@ -274,7 +274,7 @@
 
             <p>
                 <label class="required text-field-large realLabel" for="txtMessage">Message:</label>
-                <input autofocus
+                <input
                     <?php if ($messageERROR) print 'class="mistake"'; ?>
                     id="txtMessage"
                     class="standardInput"

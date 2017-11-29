@@ -5,6 +5,7 @@
 	--textColor: white;
 	--selectorColor: #A71818;
 	--greenColor: #009900;
+	--errorColor: red;
 }
 
 /* Fonts */
@@ -45,6 +46,11 @@ header {
 	padding-right: 10px;
 	padding-top: 1px;
 	padding-bottom: 1px;
+}
+
+.backgroundPanelSmall {
+	width: 50%;
+	margin: auto;
 }
 
 .backgroundPanel .bpHeader {
@@ -318,13 +324,13 @@ header {
 
 .frmMistake {
     color: var(--backgroundPanels2);
-    background-color: var(--selectorColor);
+    background-color: var(--errorColor);
     border: 3px solid var(--backgroundPanels2);
     border-radius: 4px;
 }
 
 #frmErrors ol li { 
-    color: var(--selectorColor);
+    color: var(--errorColor);
 }
 
 .information p select {

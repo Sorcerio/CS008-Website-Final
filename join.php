@@ -4,7 +4,7 @@
 ?>
 
 <!-- Background Panel Start -->
-<div class="backgroundPanel">
+<div class="backgroundPanel backgroundPanelSmall">
 
 <!-- Page Content -->
 <?php
