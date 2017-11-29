@@ -264,39 +264,41 @@
                     value="<?php print $email; ?>">
             </p>
 
-            <p>
+            <p class="collapsedForumHeader">
                 <label class="required realLabel">Gender:</label>
             </p>
-            <p>
-                <label class="radio-field">
-                    <input type="radio"
-                        id="radGenderMale"
-                        name="radGender"
-                        value="Male"
-                        tabindex="572"
-                        <?php if($gender == "Male") echo 'checked="checked"'; ?>>
-                    Male</label>
-            </p>
-            <p>
-                <label class="radio-field">
-                    <input type="radio"
-                        id="radGenderFemale"
-                        name="radGender"
-                        value="Female"
-                        tabindex="573"
-                        <?php if($gender == "Female") echo 'checked="checked"'; ?>>
-                    Female</label>
-            </p>
-            <p>
-                <label class="radio-field">
-                    <input type="radio"
-                        id="radGenderOther"
-                        name="radGender"
-                        value="Other"
-                        tabindex="574"
-                        <?php if($gender == "Other") echo 'checked="checked"'; ?>>
-                    Other</label>
-            </p>
+            <div class="formPanel">
+                <p>
+                    <label class="radio-field">
+                        <input type="radio"
+                            id="radGenderMale"
+                            name="radGender"
+                            value="Male"
+                            tabindex="572"
+                            <?php if($gender == "Male") echo 'checked="checked"'; ?>>
+                        Male</label>
+                </p>
+                <p>
+                    <label class="radio-field">
+                        <input type="radio"
+                            id="radGenderFemale"
+                            name="radGender"
+                            value="Female"
+                            tabindex="573"
+                            <?php if($gender == "Female") echo 'checked="checked"'; ?>>
+                        Female</label>
+                </p>
+                <p>
+                    <label class="radio-field">
+                        <input type="radio"
+                            id="radGenderOther"
+                            name="radGender"
+                            value="Other"
+                            tabindex="574"
+                            <?php if($gender == "Other") echo 'checked="checked"'; ?>>
+                        Other</label>
+                </p>
+            </div>
         </fieldset> <!-- Ends Contact -->
 
         <fieldset class="information">
@@ -321,49 +323,51 @@
                 </select>
             </p>
 
-            <p>
+            <p class="collapsedForumHeader">
                 <label class="required realLabel">Donation Focus:</label>
             </p>
-            <p>
-                <label class="checkField">
-                    <input <?php if($animals) print "checked "; ?>
-                        id="chkAnimals"
-                        name="chkAnimals"
-                        tabindex="420"
-                        type="checkbox"
-                        value="CBBR Research and Development">
-                CBBR Research and Development</label>
-            </p>
-            <p>
-                <label class="checkField">
-                    <input <?php if($plants) print "checked "; ?>
-                        id="chkPlants"
-                        name="chkPlants"
-                        tabindex="430"
-                        type="checkbox"
-                        value="CBBR Advertising">
-                CBBR Advertising</label>
-            </p>
-            <p>
-                <label class="checkField">
-                    <input <?php if($biosphere) print "checked "; ?>
-                        id="chkBiosphere"
-                        name="chkBiosphere"
-                        tabindex="440"
-                        type="checkbox"
-                        value="CBBR Staff Fund">
-                CBBR Staff Fund</label>
-            </p>
+            <div class="formPanel">
+                <p>
+                    <label class="checkField">
+                        <input <?php if($animals) print "checked "; ?>
+                            id="chkAnimals"
+                            name="chkAnimals"
+                            tabindex="420"
+                            type="checkbox"
+                            value="CBBR Research and Development">
+                    CBBR Research and Development</label>
+                </p>
+                <p>
+                    <label class="checkField">
+                        <input <?php if($plants) print "checked "; ?>
+                            id="chkPlants"
+                            name="chkPlants"
+                            tabindex="430"
+                            type="checkbox"
+                            value="CBBR Advertising">
+                    CBBR Advertising</label>
+                </p>
+                <p>
+                    <label class="checkField">
+                        <input <?php if($biosphere) print "checked "; ?>
+                            id="chkBiosphere"
+                            name="chkBiosphere"
+                            tabindex="440"
+                            type="checkbox"
+                            value="CBBR Staff Fund">
+                    CBBR Staff Fund</label>
+                </p>
+            </div>
         </fieldset>
 
-        <fieldset class="buttons">
+        <div class="buttons">
             <input class="button"
                 id="btnSubmit"
                 name="btnSubmit"
                 tabindex="900"
                 type="submit"
-                value="Register">
-        </fieldset> <!-- Ends Buttons -->
+                value="Register for News Letter">
+        </div> <!-- Ends Buttons -->
     </form>
 
     <?php

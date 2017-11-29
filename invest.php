@@ -23,20 +23,15 @@
     $firstName = "";
     $lastName = "";
     $email = "youremail@uvm.edu";
-    $donationLevel = "None (+$0.00)";
-    $animals = false;
-    $plants = false;
-    $biosphere = false;
-    $gender = "Male";
+    $donationLevel = "Public";
+    $donationAmount = 0.00;
 
     // Forum Error Flags
     $firstNameERROR = false;
     $lastNameERROR = false;
     $emailERROR = false;
     $donationLevelERROR = false;
-    $donationTypeERROR = false;
-    $totalChecked = 0;
-    $genderERROR = false;
+    $donationAmountERROR = false;
 
     // Misc Variables
     $errorMsg = array();
@@ -58,39 +53,14 @@
         $lastName = htmlentities($_POST["txtLastName"], ENT_QUOTES, "UTF-8");
         $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
         $donationLevel = htmlentities($_POST["lstDonationLevel"], ENT_QUOTES, "UTF-8");
-
-        if(isset($_POST["chkAnimals"])) {
-            $animals = true;
-            $totalChecked++;
-        } else {
-            $animals = false;
-        }
-
-        if(isset($_POST["chkPlants"])) {
-            $plants = true;
-            $totalChecked++;
-        } else {
-            $plants = false;
-        }
-
-        if(isset($_POST["chkBiosphere"])) {
-            $biosphere = true;
-            $totalChecked++;
-        } else {
-            $biosphere = false;
-        }
-
-        $gender = htmlentities($_POST["radGender"], ENT_QUOTES, "UTF-8");
+        $donationAmount = htmlentities($_POST["txtDonnationAmount"], ENT_QUOTES, "UTF-8");
 
         // Add Data
         $dataRecord[] = $firstName;
         $dataRecord[] = $lastName;
         $dataRecord[] = $email;
         $dataRecord[] = $donationLevel;
-        $dataRecord[] = $animals;
-        $dataRecord[] = $plants;
-        $dataRecord[] = $biosphere;
-        $dataRecord[] = $gender;
+        $dataRecord[] = $donationAmount;
 
         // Validation
         if($firstName == "") {
@@ -116,14 +86,9 @@
             $donationLevelERROR = true;
         }
 
-        if($totalChecked < 1) {
-            $errorMsg[] = "Please choose at least one focus.";
-            $donationTypeERROR = true;
-        }
-
-        if($gender != "Male" AND $gender != "Female" AND $gender != "Other") {
-            $errorMsg[] = "Please choose a gender";
-            $genderERROR = true;
+        if($donationAmount == "") {
+            $errorMsg[] = "Please enter a donation amount.";
+            $donationAmountERROR = true;
         }
 
         // Process Forum (Passed Validation)
@@ -284,29 +249,29 @@
             </p>
 
             <p>
-                <label class="required text-field realLabel" for="txtFirstName">Investment Amount:</label>
+                <label class="required text-field realLabel" for="txtDonnationAmount">Investment Amount:</label>
                 <input autofocus
-                    <?php if ($firstNameERROR) print 'class="mistake"'; ?>
-                    id="txtFirstName"
+                    <?php if ($donationAmountERROR) print 'class="mistake"'; ?>
+                    id="txtDonnationAmount"
                     class="standardInput"
                     maxLength="100"
-                    name="txtFirstName"
+                    name="txtDonnationAmount"
                     onfocus="this.select()"
                     placeholder="Enter the amount you would like to invest."
                     tabindex="100"
                     type="number"
-                    value="<?php print $firstName; ?>">
+                    value="<?php print $donationAmount; ?>">
             </p>
         </fieldset>
 
-        <fieldset class="buttons">
+        <div class="buttons">
             <input class="button"
                 id="btnSubmit"
                 name="btnSubmit"
                 tabindex="900"
                 type="submit"
                 value="Register as an Investor">
-        </fieldset> <!-- Ends Buttons -->
+        </div> <!-- Ends Buttons -->
     </form>
 
     <?php

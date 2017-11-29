@@ -244,9 +244,11 @@ header {
 
 #frmRegister fieldset{
     max-width: 50%;
-    border: 3px solid var(--backgroundPanels2);
+    border: 3px solid var(--backgroundPanels);
     border-radius: 4px;
-    margin-bottom: 3px;
+	margin-bottom: 3px;
+	background-color: var(--backgroundPanels2);
+	border-radius: 10px;
 }
 
 #frmRegister fieldset legend {
@@ -254,8 +256,9 @@ header {
 	color: var(--backgroundPanels);
 	background-color: var(--backgroundPanels2);
     font-size: 1.3em;
-    border-right: 3px solid black;
-    border-left: 3px solid black;
+    border-right: 3px solid var(--backgroundPanels);
+	border-left: 3px solid var(--backgroundPanels);
+	border-bottom: 3px solid var(--backgroundPanels);
     border-radius: 4px;
     padding-left: 5px;
 	padding-right: 5px;
@@ -264,7 +267,7 @@ header {
 #frmRegister fieldset * .realLabel {
     margin-right: 3px;
 	font-weight: bold;
-	color: white;
+	color: var(--backgroundPanels);
 }
 
 #frmRegister fieldset * .standardInput {
@@ -272,55 +275,83 @@ header {
     padding: 3px;
     outline: none;
     width: 50%;
-	border: 1px solid black;
-	color: black;
+	border: 1px solid var(--backgroundPanels);
+	color: var(--backgroundPanels2);
+	background-color: var(--backgroundPanels);
+}
+
+#frmRegister fieldset * .standardInput::placeholder {
+	color: lightgrey;
 }
 
 #frmRegister .buttons .button {
-    background-color: whitesmoke;
-    border: 1px solid black;
+    background-color: var(--backgroundPanels2);
+    border: 1px solid var(--backgroundPanels);
     border-radius: 4px;
-    color: black;
+    color: var(--backgroundPanels);
     font-weight: bold;
     padding: 5px;
-    outline: none;
+	outline: none;
+	margin-left: 4px;
+	width: 51.8%;
 }
 
 #frmRegister .buttons .button:hover {
     cursor: pointer;
-    background-color: black;
-	color: whitesmoke;
-	border: 1px solid white;
+    background-color: var(--backgroundPanels);
+	color: var(--backgroundPanels2);
+	border: 1px solid var(--backgroundPanels2);
 	border-radius: 4px;
 }
 
 .frmMistake {
-    color: black;
-    background-color: red;
-    border: 3px solid black;
+    color: var(--backgroundPanels2);
+    background-color: var(--selectorColor);
+    border: 3px solid var(--backgroundPanels2);
     border-radius: 4px;
 }
 
 #frmErrors ol li { 
-    color: red;
+    color: var(--selectorColor);
 }
 
 .information p select {
     outline: none;
-    border: 1px solid black;
+    border: 1px solid var(--backgroundPanels);
     border-radius: 4px;
 	padding: 2px;
-	color: black;
+	color: var(--backgroundPanels2);
+	background-color: var(--backgroundPanels);
 }
 
 .dropDownText {
-	color: black;
+	color: var(--backgroundPanels2);
 }
 
 .checkField {
-    font-weight: normal;
+	font-weight: normal;
+	color: var(--backgroundPanels2);
 }
 
 .checkField input {
     width: 10px;
+}
+
+.radio-field {
+	color: var(--backgroundPanels2);
+}
+
+.formPanel {
+	background-color: var(--backgroundPanels);
+	padding: 5px;
+	border-radius: 4px;
+}
+
+.formPanel p {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.collapsedForumHeader {
+	margin-bottom: 3px;
 }
