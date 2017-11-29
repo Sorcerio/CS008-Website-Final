@@ -12,8 +12,8 @@
     </div>
     
     <div class="backgroundPanel homePageFlexBox">
-        <h1 class="bpHeader">News Letter</h1>
-        <p>If you're a fan of Clean Burning Black Rocks Inc. and are burning to get a feel for more of our Clean Burning Black Rocks, be sure to sign up for our News Letter on the Join Page. All you need to do is fill out a simple form where we collect your email as well as any donations you may want to send to us; hint, hint, nudge, nudge. Any choice of donation level will help us greatly in our future endeavors and general research. Just click the link below to get started!</p>
+        <h1 class="bpHeader">Newsletter</h1>
+        <p>If you're a fan of Clean Burning Black Rocks Inc. and are burning to get a feel for more of our Clean Burning Black Rocks, be sure to sign up for our newsletter on the Join Page. All you need to do is fill out a simple form where we collect your email as well as any donations you may want to send to us (hint, hint, nudge, nudge). Any choice of donation level will help us greatly in our future endeavors and general research. Just click the link below to get started!</p>
         <a href="join.php" class="bpButton">More Information</a>
     </div>
 
@@ -26,7 +26,7 @@
     <div class="backgroundPanel homePageFlexBox">
         <h1 class="bpHeader">Invest</h1>
         <p>If you're an all-star believer in Clean Burning Black Rocks Inc. and get heated up thinking about our Clean Burning Black Rocks, you can click on over to the invest page. Here you can sign up to be an official investor to Clean Burning Black Rocks Inc. and choose if you want your righteous investment to be shown to all on our investors page! Any amount of investment will help us greatly in our future endeavors and general research. Just click the link below to get started!</p>
-        <a href="#" class="bpButton">More Information</a>
+        <a href="invest.php" class="bpButton">More Information</a>
     </div>
 </content>
 
