@@ -22,7 +22,7 @@
     // Forum Variables
     $firstName = "";
     $lastName = "";
-    $email = "youremail@uvm.edu";
+    $email = "";
     $donationLevel = "None (+$0.00)";
     $RandD = false;
     $advertising = false;
