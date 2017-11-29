@@ -59,6 +59,18 @@ header {
 	margin-top: 4px;
 }
 
+.backgroundPanel .bpMinorHeader {
+	text-align: center;
+	margin-top: 0px;
+	background-color: var(--backgroundPanels2);
+	color: var(--backgroundPanels);
+	width: 90%;
+	margin: auto;
+	border-radius: 10px;
+	padding-bottom: 4px;
+	margin-top: 4px;
+}
+
 .backgroundPanel .bpButton {
 	background-color: var(--backgroundPanels2);
 	color: var(--backgroundPanels);
@@ -354,4 +366,8 @@ header {
 
 .collapsedForumHeader {
 	margin-bottom: 3px;
+}
+
+.text-field-large {
+	height: 100px;
 }

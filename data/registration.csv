@@ -1,1 +1,2 @@
-firstName,lastName,email,gender,donnation,donnationFocus
+firstName,lastName,email,donnation,donnationFocus_RandD,donnationFocus_advertising,donnationFocus_staffFund,gender
+Bob,Job,youremail@uvm.edu,"Supporter (+$10.00)",,1,1,Other

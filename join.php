@@ -24,9 +24,9 @@
     $lastName = "";
     $email = "youremail@uvm.edu";
     $donationLevel = "None (+$0.00)";
-    $animals = false;
-    $plants = false;
-    $biosphere = false;
+    $RandD = false;
+    $advertising = false;
+    $staffFund = false;
     $gender = "Male";
 
     // Forum Error Flags
@@ -59,25 +59,25 @@
         $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
         $donationLevel = htmlentities($_POST["lstDonationLevel"], ENT_QUOTES, "UTF-8");
 
-        if(isset($_POST["chkAnimals"])) {
-            $animals = true;
+        if(isset($_POST["chkRandD"])) {
+            $RandD = true;
             $totalChecked++;
         } else {
-            $animals = false;
+            $RandD = false;
         }
 
-        if(isset($_POST["chkPlants"])) {
-            $plants = true;
+        if(isset($_POST["chkAdvertising"])) {
+            $advertising = true;
             $totalChecked++;
         } else {
-            $plants = false;
+            $advertising = false;
         }
 
-        if(isset($_POST["chkBiosphere"])) {
-            $biosphere = true;
+        if(isset($_POST["chkStaffFund"])) {
+            $staffFund = true;
             $totalChecked++;
         } else {
-            $biosphere = false;
+            $staffFund = false;
         }
 
         $gender = htmlentities($_POST["radGender"], ENT_QUOTES, "UTF-8");
@@ -87,9 +87,9 @@
         $dataRecord[] = $lastName;
         $dataRecord[] = $email;
         $dataRecord[] = $donationLevel;
-        $dataRecord[] = $animals;
-        $dataRecord[] = $plants;
-        $dataRecord[] = $biosphere;
+        $dataRecord[] = $RandD;
+        $dataRecord[] = $advertising;
+        $dataRecord[] = $staffFund;
         $dataRecord[] = $gender;
 
         // Validation
@@ -329,9 +329,9 @@
             <div class="formPanel">
                 <p>
                     <label class="checkField">
-                        <input <?php if($animals) print "checked "; ?>
-                            id="chkAnimals"
-                            name="chkAnimals"
+                        <input <?php if($RandD) print "checked "; ?>
+                            id="chkRandD"
+                            name="chkRandD"
                             tabindex="420"
                             type="checkbox"
                             value="CBBR Research and Development">
@@ -339,9 +339,9 @@
                 </p>
                 <p>
                     <label class="checkField">
-                        <input <?php if($plants) print "checked "; ?>
-                            id="chkPlants"
-                            name="chkPlants"
+                        <input <?php if($advertising) print "checked "; ?>
+                            id="chkAdvertising"
+                            name="chkAdvertising"
                             tabindex="430"
                             type="checkbox"
                             value="CBBR Advertising">
@@ -349,9 +349,9 @@
                 </p>
                 <p>
                     <label class="checkField">
-                        <input <?php if($biosphere) print "checked "; ?>
-                            id="chkBiosphere"
-                            name="chkBiosphere"
+                        <input <?php if($staffFund) print "checked "; ?>
+                            id="chkStaffFund"
+                            name="chkStaffFund"
                             tabindex="440"
                             type="checkbox"
                             value="CBBR Staff Fund">

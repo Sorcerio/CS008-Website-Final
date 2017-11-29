@@ -23,15 +23,17 @@
     $firstName = "";
     $lastName = "";
     $email = "youremail@uvm.edu";
-    $donationLevel = "Public";
+    $accountType = "Public";
     $donationAmount = 0.00;
+    $message = "None";
 
     // Forum Error Flags
     $firstNameERROR = false;
     $lastNameERROR = false;
     $emailERROR = false;
-    $donationLevelERROR = false;
+    $accountTypeERROR = false;
     $donationAmountERROR = false;
+    $messageERROR = false;
 
     // Misc Variables
     $errorMsg = array();
@@ -52,15 +54,17 @@
         $firstName = htmlentities($_POST["txtFirstName"], ENT_QUOTES, "UTF-8");
         $lastName = htmlentities($_POST["txtLastName"], ENT_QUOTES, "UTF-8");
         $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
-        $donationLevel = htmlentities($_POST["lstDonationLevel"], ENT_QUOTES, "UTF-8");
-        $donationAmount = htmlentities($_POST["txtDonnationAmount"], ENT_QUOTES, "UTF-8");
+        $accountType = htmlentities($_POST["lstAccountType"], ENT_QUOTES, "UTF-8");
+        $donationAmount = htmlentities($_POST["txtDonationAmount"], ENT_QUOTES, "UTF-8");
+        $message = htmlentities($_POST["txtMessage"], ENT_QUOTES, "UTF-8");
 
         // Add Data
         $dataRecord[] = $firstName;
         $dataRecord[] = $lastName;
         $dataRecord[] = $email;
-        $dataRecord[] = $donationLevel;
+        $dataRecord[] = $accountType;
         $dataRecord[] = $donationAmount;
+        $dataRecord[] = $message;
 
         // Validation
         if($firstName == "") {
@@ -81,13 +85,18 @@
             $emailERROR = true;
         }
 
-        if($donationLevel == "") {
-            $errorMsg[] = "Please choose a donation level.";
-            $donationLevelERROR = true;
+        if($accountType == "") {
+            $errorMsg[] = "Please choose an account type.";
+            $accountTypeERROR = true;
         }
 
         if($donationAmount == "") {
-            $errorMsg[] = "Please enter a donation amount.";
+            $errorMsg[] = "Please enter a investment amount.";
+            $donationAmountERROR = true;
+        }
+
+        if($donationAmount == "") {
+            $errorMsg[] = "Please enter an investment message.";
             $donationAmountERROR = true;
         }
 
@@ -233,15 +242,15 @@
         <fieldset class="information">
             <legend>Investment Information</legend>
             <p>
-                <label class="required realLabel" for="donationLevel">Account Type:</label>
-                <select id="donationLevel"
-                    name="lstDonationLevel"
+                <label class="required realLabel" for="accountType">Account Type:</label>
+                <select id="accountType"
+                    name="lstAccountType"
                     tabindex="520">
-                    <option <?php if($donationLevel=="Public")print " selected "; ?>
+                    <option <?php if($accountType=="Public")print " selected "; ?>
                         value="Public" class="dropDownText">
                         Public
                     </option>
-                    <option <?php if($donationLevel=="Private")print " selected "; ?>
+                    <option <?php if($accountType=="Private")print " selected "; ?>
                         value="Private" class="dropDownText">
                         Private
                     </option>
@@ -249,18 +258,33 @@
             </p>
 
             <p>
-                <label class="required text-field realLabel" for="txtDonnationAmount">Investment Amount:</label>
+                <label class="required text-field realLabel" for="txtDonationAmount">Investment Amount:</label>
                 <input autofocus
                     <?php if ($donationAmountERROR) print 'class="mistake"'; ?>
-                    id="txtDonnationAmount"
+                    id="txtDonationAmount"
                     class="standardInput"
                     maxLength="100"
-                    name="txtDonnationAmount"
+                    name="txtDonationAmount"
                     onfocus="this.select()"
                     placeholder="Enter the amount you would like to invest."
                     tabindex="100"
                     type="number"
                     value="<?php print $donationAmount; ?>">
+            </p>
+
+            <p>
+                <label class="required text-field-large realLabel" for="txtMessage">Message:</label>
+                <input autofocus
+                    <?php if ($messageERROR) print 'class="mistake"'; ?>
+                    id="txtMessage"
+                    class="standardInput"
+                    maxLength="300"
+                    name="txtMessage"
+                    onfocus="this.select()"
+                    placeholder="Enter the message you'd like to attach to your investment."
+                    tabindex="100"
+                    type="text"
+                    value="<?php print $message; ?>">
             </p>
         </fieldset>
 
