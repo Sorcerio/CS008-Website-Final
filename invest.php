@@ -258,7 +258,7 @@
             </p>
 
             <p>
-                <label class="required text-field realLabel" for="txtDonationAmount">Investment Amount:</label>
+                <label class="required text-field realLabel" for="txtDonationAmount">Investment Amount (# of shares):</label>
                 <input
                     <?php if ($donationAmountERROR) print 'class="mistake"'; ?>
                     id="txtDonationAmount"
