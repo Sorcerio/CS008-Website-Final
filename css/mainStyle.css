@@ -263,7 +263,7 @@ header {
 }
 
 #frmRegister fieldset{
-    max-width: 50%;
+    max-width: 100%;
     border: 3px solid var(--backgroundPanels);
     border-radius: 4px;
 	margin-bottom: 3px;
@@ -312,8 +312,9 @@ header {
     font-weight: bold;
     padding: 5px;
 	outline: none;
-	margin-left: 4px;
-	width: 51.8%;
+	/* margin-left: 4px;
+	margin-right: 4px; */
+	width: 100%; 
 }
 
 #frmRegister .buttons .button:hover {
