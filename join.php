@@ -168,9 +168,9 @@
             $cc = "";
             $bcc = "";
 
-            $from = "customer.service@saveNatureBecauseItsGreatInc.com";
+            $from = "newsletter@cbbr.com";
 
-            $subject = "Changeing Earth: ";
+            $subject = "Your Contact Info: ";
 
             $mailed = sendMail($to,$cc,$bcc,$from,$subject,$message);
         }

@@ -1,1 +1,1 @@
-isInvestor,FistName,LastName,Amount,Email,ListBox,CheckBox,RadioBox
+firstName,lastName,amount,email,profileType

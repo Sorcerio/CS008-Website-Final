@@ -289,7 +289,9 @@ header {
 #frmRegister .buttons .button:hover {
     cursor: pointer;
     background-color: black;
-    color: whitesmoke;
+	color: whitesmoke;
+	border: 1px solid white;
+	border-radius: 4px;
 }
 
 .frmMistake {
