@@ -110,6 +110,18 @@ header {
 	border: 1px solid var(--backgroundPanels2);
 }
 
+.inlineImageA {
+	width: 45%;
+}
+
+#ceoPanel {
+	min-height: 19em;
+}
+
+.inlineImageB {
+	height: 15em;
+}
+
 .flexBoxContainer {
     display: -webkit-flex;
     display: flex;
