@@ -10,4 +10,4 @@ It's a school project for a fictional company's website called Clean Burning Bla
 * Dense Font - [Found Here](https://www.behance.net/gallery/10231891/Dense-typeface)
 * Hands Holding Black Rock - [Found Here](https://www.worldcoal.org/sites/default/files/styles/basic_page_header/public/shutterstock_133998776.jpg?itok=DbbVckc6)
 * Alcubierre Font - [Found Here](https://www.behance.net/gallery/28703177/Alcubierre-Free-Typeface&)
-* Dr. Johnson Long - [Found Here](https://pbs.twimg.com/media/DK6HHAtWkAASJsP.jpg)
+* "Dr. Johnson Long" Image - [Found Here](https://pbs.twimg.com/media/DK6HHAtWkAASJsP.jpg)
