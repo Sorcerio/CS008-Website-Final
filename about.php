@@ -3,15 +3,27 @@
     include ("assets/completeTop.php");
 ?>
 
-<!-- Background Panel Start -->
-<div class="backgroundPanel">
-
 <!-- Page Content -->
-<h1>About Page</h1>
-<p>Test text for getting stuff to <img src="images/cbbrHands.jpg" align="middle"> work right before putting in effort.</p>
-
-<!-- Background Panel End -->
+<content>
+<div class="backgroundPanel">
+    <h1 class="bpQuote">“We burn harder, stronger, and longer!”</h1>
+    <p class="bpQuoteCaption">Dr. Johnson Long, Founder and CEO</p>
 </div>
+<br>
+
+<article class="backgroundPanel">
+    <h1 class="bpHeader">Get to Know Clean Burning Black Rocks Inc.</h1>
+    <!-- <img src="images/cbbrHands.jpg" align="middle"> PUT THIS SOMEWHERE -->
+    <p>TEXT GOES HERE FOR ABOUT THE COMPANY</p>
+</article>
+<br>
+
+<article class="backgroundPanel">
+    <h1 class="bpHeader">Meet Dr. Johnson Long, Founder and CEO</h1>
+    <p>TEXT GOES HERE FOR ABOUT DR. JOHNSON LONG</p>
+</article>
+
+</content>
 <br>
 
 <!-- Footer Loader -->

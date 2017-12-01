@@ -53,6 +53,21 @@ header {
 	margin: auto;
 }
 
+.backgroundPanel .bpQuote {
+	text-align: center;
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 3px;
+	margin-top: 4px;
+}
+
+.backgroundPanel .bpQuoteCaption {
+	margin-top: 0px;
+	margin-bottom: 4px;
+	text-align: center;
+	font-weight: normal;
+}
+
 .backgroundPanel .bpHeader {
 	text-align: center;
 	margin-top: 0px;
